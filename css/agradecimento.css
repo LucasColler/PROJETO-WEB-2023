@@ -25,17 +25,16 @@ div {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-top: 4rem;
+    padding-top: 5rem;
     color: white;
 }
 
-div:first-child {
+div span:first-child {
     padding-bottom: 3rem;
 }
 
 div span{
     font-size: 4rem;
-    padding-bottom: 3rem;
 }
 
 footer{
