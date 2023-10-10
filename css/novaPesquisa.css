@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Averia Libre', cursive;
+    color: white;
+}
+
+body {
+    background-color: #372775;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icon span {
+    font-size: 3rem;
+    padding-right: 5px;
+
+}
+
+.link {
+    padding-top: .75em;
+}
+
+.link a {
+    padding-right: 1.5rem;
+    font-size: 1.5em;
+    color: #3F92C5;
+}
+
+.link-apagar p {
+    font-size: 18px;
+    color: #F57F7F;
+}
+
+.icones span {
+    font-size: 7rem;
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+
+#logo {
+    padding-top: 0.3em;
+}
+
+
+input {
+    height: 3.5em;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #3F92C5;
+}
+
+.input-img {
+    height: 3.5em;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #3F92C5;
+    background-color: white;
+}
+
+.input-img-button {
+    height: 3.5em;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #A4A4A4;
+}
+
+button {
+    padding: .6rem 2.6rem;
+    font-size: 1.3rem;
+    border-radius: .5rem;
+    background-color: #37BD6D;
+    border: none;
+    cursor: pointer;
+}
+
+#pesquisa-title {
+    text-align: center;
+    padding-bottom: 4rem;
+    font-size: 1.9rem;
+    margin-top: 2rem;
+}
+
+.container {
+    border: 1px solid #737373;
+    border-radius: 3%;
+    width: 42%;
+    margin-top: 3.0rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    padding: 2% 3% 1% 3%;
+    box-sizing: content-box;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.7rem;
+    gap: .20rem;
+}
+
+.inputs:first-child {
+    margin-bottom: 1rem;
+}
+
+.inputs:nth-child(3) {
+    margin-top: 1rem;
+}
+
+.inputs-img {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.7rem;
+    gap: .20rem;
+}
+
+.input-img {
+    width: 70%;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+
+.button {
+    display: flex;
+    width: 30%;
+    background-color: #A4A4A4;
+    justify-content: center;
+    align-items: center;
+}
+
+.button label {
+    font-size: 16px;
+}
+
+.button input {
+    position: absolute;
+}
+
+.imagem-preview {
+    background-color: white;
+    width: 129px;
+    height: 129px;
+    margin-top: 1%;
+}
+
+.criar {
+    margin-top: 7rem;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 30%;
+    padding: 1% 7%;
+    border-radius: 13px;
+    background-color: #37BD6D;
+    display: flex;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.criar a {
+    font-size: 1.4rem;
+    color: #3F92C5;
+}
+
+.nova-Pesquisa:link,
+.nova-Pesquisa:visited,
+.nova-Pesquisa:hover,
+.nova-Pesquisa:active {
+    text-decoration: none;
+    color: inherit;
+}

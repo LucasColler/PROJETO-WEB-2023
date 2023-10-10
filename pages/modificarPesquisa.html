@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Satisfaying.you</title>
+    <link rel="stylesheet" href="../css/modificarPesquisa.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="icon">
+            <div id="logo">
+                <span class="material-symbols-outlined large">sentiment_satisfied</span>
+            </div>
+            <span>Satisfaying.you</span>
+        </div>
+        <div class="link">
+            <div class="link-apagar">
+                <div class="img-apagar">
+                    <img src="/assets/img/delete_FILL0_wght400_GRAD0_opsz48 1.svg" alt="">
+                </div>
+                <div id="apagar">
+                    <a class="button-apagar" href="novaPesquisa.html">Apagar</a>
+                </div>
+            </div>
+            <a href="index.html">Sair</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="pesquisa-title">
+            <span>Atualizar os dados da pesquisa</span>
+        </div>
+        <form action="">
+            <div class="inputs">
+                <label for="nome">Nome da pesquisa</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite o nome da pesquisa">
+            </div>
+            <div class="inputs">
+                <label for="data">Data</label>
+                <input type="date" name="data" id="data" placeholder="Escolha a data">
+            </div>
+            <div class="inputs">
+                <label for="imagem">Imagem</label>
+            </div>
+
+            <div class="inputs-img">
+                <div class="input-img"> </div>
+                <div class="button">
+                    <input type="file" name="imagem" id="imagem" placeholder="Carregue a imagem...">
+                    <label for="imagem">Escolher arquivo</label>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="imagem-preview"></div>
+                <div class="criar">
+                    <button type="submit" class="enviar" href="#">Salvar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
