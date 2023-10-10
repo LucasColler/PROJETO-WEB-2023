@@ -122,34 +122,18 @@
     <main>
         <section id="form_box">
             <h2> Crie sua conta no Satisfying.you</h2>
-            <form id='form_create_account' action="index.html" autocomplete="on">
+            <form id='form_create_account' action="home.html" autocomplete="on">
                 <label for="txt_email"> E-mail </label>
-                <input type="email" id="des_email" name="des_email" required>
+                <input type="email" id="des_email" name="des_email" >
                 <label for="txt_senha"> Senha </label>
-                <input type="password" id="txt_senha" name="txt_senha" required>
+                <input type="password" id="txt_senha" name="txt_senha" >
                 <label for="txt_senha_repetir"> Repetir Senha </label>
-                <input type="password" id="txt_senha_repetir" name="txt_senha_repetir" required>
+                <input type="password" id="txt_senha_repetir" name="txt_senha_repetir" >
                 <p id="retorno_validar"> </p>
-                <input type="submit" value="Criar" onclick="return validarSenha()">
+                <input type="submit" value="Criar" >
             </form>
         </section>
     </main>
-    <script>
-        function validarSenha() {
-            let senha = document.getElementById('txt_senha').value;
-            let senhaRepetir = document.getElementById('txt_senha_repetir').value;
-            let retorno = document.getElementById('retorno_validar')
-            if (senha != senhaRepetir) {
-                retorno.innerHTML = 'Senha não confere!';
-                return false;
-            } else {
-                retorno.innerHTML = '';
-                return true;
-            }
-        }
-
-        document.getElementById('txt_senha_repetir').addEventListener("keyup", validarSenha)
-    </script>
 </body>
 
 </HTML>
