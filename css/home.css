@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Averia Libre', cursive;
+    color: white;
+}
+
+body {
+    background-color: #372775;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icon span {
+    font-size: 3rem;
+    padding-right: 5px;
+
+}
+
+.link {
+    margin-left: 5%;
+    padding-top: .75em;
+    display: flex;
+}
+
+.link .sair {
+    padding-right: 1.5rem;
+    font-size: 1.5em;
+    color: #3F92C5;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 6%;
+}
+
+.icones span {
+    font-size: 7rem;
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+
+#logo {
+    padding-top: 0.3em;
+}
+
+button {
+    padding: 1.6rem 2.5rem;
+    font-size: 1.4rem;
+    width: 80%;
+    border-radius: .5rem;
+    background-color: #37BD6D;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+
+    margin: 5% auto;
+    border: none;
+    background-color: white;
+    border: none;
+    width: 96%;
+}
+
+.input {
+    text-align: center;
+    width: 100%;
+}
+
+
+.input input {
+    width: 96%;
+    padding: 14px;
+    font-size: 20px;
+    color: #8B8B8B;
+    border: none;
+}
+
+.carrossel {
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    margin-left: 2%;
+    margin-top: 4%;
+}
+
+.carrossel-box {
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 500px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin-right: 3%;
+    border-radius: 5%;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+.carrossel-box .carrousel-box-date {
+    text-align: center;
+    color: #8B8B8B;
+    font-size: 18px;
+}
+
+.carrossel-box .carrousel-box-title {
+    text-align: center;
+    color: #3F92C5;
+    font-size: 38px;
+}
+
+.banner {
+    align-self: center;
+    margin: auto;
+    justify-self: center;
+    width: 120px;
+    height: 120px;
+}
+
+.icon-search {
+    background-color: white;
+}
+
+.novaPesquisa:link,
+.novaPesquisa:visited,
+.novaPesquisa:hover,
+.novaPesquisa:active {
+    text-decoration: none;
+    color: inherit;
+}
