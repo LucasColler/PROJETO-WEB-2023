@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<HTML>
+
+<head>
+    <title>Satisfying.you</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+        :root {
+            height: 100%;
+            font-size: 62.5%;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Averia Libre', cursive;
+            font-weight: 400;
+            color: #FFFFFF;
+        }
+
+        body {
+            background-color: #372775;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding-inline: 2rem;
+            padding-top: 2rem;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20rem;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: space-around;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.4rem;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        label {
+            font-size: 2.4rem;
+        }
+
+        input {
+            height: 3.9rem;
+            width: 42.4rem;
+            margin-bottom: 1rem;
+            color: #3F92C5;
+            font-size: 1.8rem;
+        }
+
+        input[type=submit] {
+            font-size: 2.4rem;
+            color: #ffffff;
+            height: 5rem;
+            width: 18.8rem;
+            align-self: flex-end;
+            background-color: #37BD6D;
+            margin-top: 4rem;
+            border: none;
+            border-radius: 1.5rem;
+            cursor: pointer;
+        }
+
+        #header_left {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+
+        #imagotype_text {
+            font-size: 4rem;
+        }
+
+        #imagotype_icon {
+            font-size: 4rem;
+        }
+
+        #form_box {
+            border: 2px solid #737373;
+            border-radius: 1.5rem;
+            padding: 3rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div id="header_left">
+            <span id="imagotype_icon" class="material-symbols-outlined">sentiment_satisfied</span>
+            <h1 id="imagotype_text">Satisfying.you</h1>
+        </div>
+    </header>
+    <main>
+        <section id="form_box">
+            <h2> Crie sua conta no Satisfying.you</h2>
+            <form id='form_create_account' action="index.html" autocomplete="on">
+                <label for="txt_email"> E-mail </label>
+                <input type="email" id="des_email" name="des_email" required>
+                <label for="txt_senha"> Senha </label>
+                <input type="password" id="txt_senha" name="txt_senha" required>
+                <label for="txt_senha_repetir"> Repetir Senha </label>
+                <input type="password" id="txt_senha_repetir" name="txt_senha_repetir" required>
+                <p id="retorno_validar"> </p>
+                <input type="submit" value="Criar" onclick="return validarSenha()">
+            </form>
+        </section>
+    </main>
+    <script>
+        function validarSenha() {
+            let senha = document.getElementById('txt_senha').value;
+            let senhaRepetir = document.getElementById('txt_senha_repetir').value;
+            let retorno = document.getElementById('retorno_validar')
+            if (senha != senhaRepetir) {
+                retorno.innerHTML = 'Senha não confere!';
+                return false;
+            } else {
+                retorno.innerHTML = '';
+                return true;
+            }
+        }
+
+        document.getElementById('txt_senha_repetir').addEventListener("keyup", validarSenha)
+    </script>
+</body>
+
+</HTML>
+</DOCTYPE>

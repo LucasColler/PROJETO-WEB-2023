@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>Satisfying.you</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+         :root {
+            height: 100%;
+            font-size: 62.5%;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Averia Libre', cursive;
+            font-weight: 400;
+            color: #FFFFFF;
+        }
+
+        body {
+            background-color: #372775;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding-inline: 2rem;
+            padding-top: 2rem;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20rem;
+            gap: 10rem;
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+            margin-left: auto;
+            margin-right: auto;
+            gap: 8rem;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 4.8rem;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #header_right {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            font-size: 2rem;
+            flex-direction: row-reverse;
+        }
+
+        #btn_exit {
+            color: #3F92C5;
+            text-decoration: underline;
+        }
+
+        .color_sad {color: #D71616}
+        .color_dissatisfied {color: #FF360A}
+        .color_neutral {color: #FFC632}
+        .color_satisfied {color: #37BD6D}
+        .color_very_satisfied {color: #25BC22}
+
+        .icon_coleta {
+            font-size: 12rem;
+        }
+
+        .label_coleta {
+            text-align: center;
+            font-size: 3.6rem;
+            text-decoration: none;
+        }
+
+        .item_coleta{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+    </style>
+    
+    </head>
+
+    <body>
+        <header>
+            <div id="header_right">
+                <a id='btn_exit' href="index.html">Sair</a>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h2> O que você achou do carnaval 2024?</h2>
+            </section>
+            <section id="coleta">
+                <a class='item_coleta' href="AgradecimentoParticipacao.html">
+                    <span class="material-symbols-outlined color_sad icon_coleta">sentiment_sad</span>
+                    <p class="label_coleta">Péssimo</p>
+                </a>
+                <a class='item_coleta' href="AgradecimentoParticipacao.html">
+                    <span class="material-symbols-outlined color_dissatisfied icon_coleta">sentiment_dissatisfied</span>
+                    <p class="label_coleta">Ruim</p>
+                </a>
+                <a class='item_coleta' href="AgradecimentoParticipacao.html">
+                    <span class="material-symbols-outlined color_neutral icon_coleta">sentiment_neutral</span>
+                    <p class="label_coleta">Neutro</p>
+                </a>
+                <a class='item_coleta' href="AgradecimentoParticipacao.html">
+                    <span class="material-symbols-outlined color_satisfied icon_coleta">sentiment_satisfied</span>
+                    <p class="label_coleta">Bom</p>
+                </a>
+                <a class='item_coleta' href="AgradecimentoParticipacao.html">
+                    <span class="material-symbols-outlined color_very_satisfied icon_coleta">sentiment_very_satisfied</span>
+                    <p class="label_coleta">Excelente</p>
+                </a>
+            </section>
+        </main>
+    </body>
+</HTML>
+</DOCTYPE>
