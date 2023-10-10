@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>Satisfying.you</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+         :root {
+            height: 100%;
+            font-size: 62.5%;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Averia Libre', cursive;
+            font-weight: 400;
+            color: #FFFFFF;
+        }
+
+        body {
+            background-color: #372775;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            padding-inline: 2rem;
+            padding-top: 2rem;
+            justify-content: space-between;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20rem;
+            gap: 10rem;
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+            margin-left: auto;
+            margin-right: auto;
+            gap: 8rem;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 4.8rem;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .label_relatorio{font-size: 3.6rem;}
+
+        .label_box_realtorio{height: 3.6rem;width:  3.6rem;}
+
+        .color_sad {background-color: #53D8D8}
+        .color_dissatisfied {background-color: #EA7288}
+        .color_neutral {background-color: #5FCDA4}
+        .color_satisfied {background-color: #6994FE}
+        .color_very_satisfied {background-color: #F1CE7E}
+
+        .item_legenda {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        #header_left {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+
+        #imagotype_text {
+            font-size: 4rem;
+        }
+
+        #imagotype_icon {
+            font-size: 4rem;
+        }
+
+        #header_right {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            font-size: 2rem;
+            flex-direction: row-reverse;
+        }
+
+        #btn_exit {
+            color: #3F92C5;
+            text-decoration: underline;
+        }
+        
+        #legenda_relatorio{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+    </style>
+    
+    </head>
+
+    <body>
+        <header>
+            <div id="header_left">
+                <span id="imagotype_icon" class="material-symbols-outlined">sentiment_satisfied</span>
+                <h1 id="imagotype_text">Satisfying.you</h1>
+            </div>
+            <div id="header_right">
+                <a id='btn_exit' href="index.html">Sair</a>
+            </div>
+        </header>
+        <main>
+            <section>
+                <img src="./images/chart.png"> </img>
+                <div id='legenda_relatorio'>
+                    <div class="item_legenda">
+                        <div class="label_box_realtorio color_sad"></div>
+                        <p class="label_relatorio">Péssimo</p>
+                    </div>
+                    <div class="item_legenda">
+                        <div class="label_box_realtorio color_dissatisfied"></div>
+                        <p class="label_relatorio">Ruim</p>
+                    </div>
+                    <div class="item_legenda">
+                        <div class="label_box_realtorio color_neutral"></div>
+                        <p class="label_relatorio">Neutro</p>
+                    </div>
+                    <div class="item_legenda">
+                        <div class="label_box_realtorio color_satisfied"></div>
+                        <p class="label_relatorio">Bom</p>
+                    </div>
+                    <div class="item_legenda">
+                        <div class="label_box_realtorio color_very_satisfied"></div>
+                        <p class="label_relatorio">Excelente</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</HTML>
+</DOCTYPE>
