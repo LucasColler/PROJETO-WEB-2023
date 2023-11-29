@@ -122,18 +122,53 @@
     <main>
         <section id="form_box">
             <h2> Crie sua conta no Satisfying.you</h2>
-            <form id='form_create_account' action="home.html" autocomplete="on">
+            <form id='form_create_account' action="index.html" autocomplete="on" method="post">
                 <label for="txt_email"> E-mail </label>
-                <input type="email" id="des_email" name="des_email" >
+                <input type="email" id="txt_email" name="txt_email" required>
                 <label for="txt_senha"> Senha </label>
-                <input type="password" id="txt_senha" name="txt_senha" >
+                <input type="password" id="txt_senha" name="txt_senha" required>
                 <label for="txt_senha_repetir"> Repetir Senha </label>
-                <input type="password" id="txt_senha_repetir" name="txt_senha_repetir" >
+                <input type="password" id="txt_senha_repetir" name="txt_senha_repetir" required>
                 <p id="retorno_validar"> </p>
-                <input type="submit" value="Criar" >
+                <input type="submit" value="Criar" onclick="return cadastrar()">
             </form>
         </section>
     </main>
+    <script>
+        function validarSenha() {
+            let senha = document.getElementById('txt_senha').value;
+            let senhaRepetir = document.getElementById('txt_senha_repetir').value;
+            let retorno = document.getElementById('retorno_validar')
+
+            if (senha != senhaRepetir) {
+                retorno.innerHTML = 'Senha não confere!';
+                return false;
+            } else {
+                retorno.innerHTML = '';
+                return true;
+            }
+        }
+
+        function cadastrar() {
+            if (txt_email.value != '' && txt_senha.value != '' && validarSenha()) {
+                let usuarios = JSON.parse(localStorage.getItem('usuarios') || '[]')
+
+                usuarios.push(
+                    {
+                        usuario: txt_email.value,
+                        senha: txt_senha.value
+                    }
+                )
+
+                localStorage.setItem('usuarios', JSON.stringify(usuarios))
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        document.getElementById('txt_senha_repetir').addEventListener("keyup", validarSenha)
+    </script>
 </body>
 
 </HTML>

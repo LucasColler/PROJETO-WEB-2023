@@ -21,24 +21,52 @@
             <div id="login-title">
                 <span>Fazer login</span>
             </div>
-            <form action="home.html">
+            <form id='form_login_account' action="home.html" autocomplete="on" method="post">
             <div class="inputs">
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                <label for="txt_email">E-mail</label>
+                <input type="email" name="txt_email" id="txt_email" placeholder="Digite seu e-mail">
             </div>
             <div class="inputs">
-                <label for="password">Senha</label>
-                <input type="password" name="password" id="password" placeholder="Digite sua senha">
+                <label for="txt_senha">Senha</label>
+                <input type="password" name="txt_senha" id="txt_senha" placeholder="Digite sua senha">
             </div>
             <div class="error">
-                <span>E-mail e/ou senha inválidos</span>
+                <span id="retorno_validar"></span>
                 <a href="recuperarSenha.html">Esqueci minha senha</a>
             </div>
             <div class="entrar">
                 <a href="NovaConta.html">Criar conta</a>
-                <button type="submit" href="home.html">Entrar</button>
+                <input type="submit" value="Entrar" onclick="return entrar()">
             </div>
             </form>
         </div>
+
+        <script>   
+            function entrar() {
+                let ValidaUsuario = {
+                    usuario: '',
+                    senha: ''
+                }
+
+                let usuarios = JSON.parse(localStorage.getItem('usuarios'))
+
+                usuarios.forEach((item) => {
+                    if(txt_email.value == item.usuario && txt_senha.value == item.senha){
+                        ValidaUsuario = {
+                            usuario: item.usuario,
+                            senha: item.senha
+                        }
+                    }
+                })
+                
+                if (txt_email.value == ValidaUsuario.usuario && txt_senha.value == ValidaUsuario.senha) {
+                    document.getElementById('retorno_validar').innerHTML = ''
+                    return true;
+                } else {
+                    document.getElementById('retorno_validar').innerHTML = 'Usuário ou senha inválidos.'
+                    return false;
+                }
+            }
+        </script>
     </body>
 </html>
